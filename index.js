@@ -58,10 +58,10 @@ if(!existingUser) {
 });
 
 app.get("/success", (req, res)=>{
-    res.sendFile (__dirname+"/pages/success.html");
+    res.sendFile (__dirname+"/success.html");
 })
 app.get("/error", (req, res)=>{
-    res.sendFile (__dirname+"/pages/error.html");
+    res.sendFile (__dirname+"/error.html");
 })
 app.listen(port, ()=>{
     console.log(`server is running on port ${port}`);
